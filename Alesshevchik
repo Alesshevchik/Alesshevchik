@@ -1,0 +1,27 @@
+#include <math.h>
+ #include <iostream>
+
+ using namespace std;
+ int main ()
+ {
+ setlocale(LC_ALL, ".1251");
+ int time;
+ cout << "Введите время T в секундах:";
+ cin >> time;
+
+
+ float hour, min, sec;
+ int ostHour, ostMin;
+
+ hour = time / 3600;
+ostHour = time % 3600;
+
+ min = ostHour / 60;
+ ostMin = ostHour % 60;
+
+ sec = ostMin;
+
+ cout <<"Часов:" << hour << "\n";
+ cout<< "Минут:" << min << "\n";
+ cout << "Секунд:"<< sec << "\n";
+ }
